@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>EWP HA 15</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.css">
+    <link rel="stylesheet" type="text/css" href="aufgabe12.css">
 </head>
 <body>
 
 <!-- TODO: Erstellen Sie hier die nötigen Inhalte -->
+
+	<div>
+		<h3>Beschreibung git-Workflow</h3>
+
+		<p>
+			Zunächst wird mithilfe des <span id="tt-clone">git clone</span> Befehls ein Projekt aus dem Repository auf die lokale Festplatte geklont und kann dann bearbeitet werden. Nach der Bearbeitung werden die veränderten Dateien mithilfe des <span id="tt-add">git add</span> Befehls zur Zwischenspeicherung vorgemerkt. Mit dem <span id="tt-commit">git commit</span> Befehl werden dann alle vorgemerkten Dateien unter Angabe eines Kommetars (der möglichst hilfreiche und übersichtliche Angaben zu den erfolgten Änderungen gibt) zwischengespeichert (in lokale .git Datei). Schließlich werden die zwischengespeicherten Änderungen (commits) mit dem <span id="tt-push">git push</span> Befehl ins das Repository hochgeladen. Veränderungen an dem Projekt sind somit dokumentiert und lassen sich zeitlich nachvollziehen. Umgekehrt lassen sich mit dem <span id="tt-pull">git pull</span> Befehl die lokalen Dateien auf den Stand der Dateien im Repository aktualisieren. Auf diese Weise kann effizient asynchron von mehreren Personen an einem Projekt gearbeitet werden, ohne 'neue aktuelle' Versionen aus verschiedenen Dateien manuell mergen zu müssen.
+		</p>
+
+		<div id="tt-clone-content">git clone https://github.com/rolfad/EWP-HA-15.git</div>
+
+		<div id="tt-add-content">git add index.html</div>
+
+		<div id="tt-commit-content">git commit -m "Changed Tooltip Content"</div>
+
+		<div id="tt-push-content">git push</div>
+
+		<div id="tt-pull-content">git pull</div>
+
+	</div>
+
+
+	<div>
+			
+		<table id="tab-git">
+			<thead>
+				<tr>
+					<th>Befehl</th>
+				</tr>
+			</thead>
+		</table>
+
+
+
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+	<script src="aufgabe12.js"></script>
+
+	<a href="https://github.com/rolfad/EWP-HA-15" target="blank">
+		<img src="github-logo.jpeg" alt="github">
+	</a>
 
 </body>
 </html>
